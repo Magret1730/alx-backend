@@ -97,10 +97,10 @@ class Server:
         """
         # Call get_page to retrieve the dataset page
         dataset_page = self.get_page(page, page_size)
-        print("Dataset_page", dataset_page)
+
         # Calculate page_size
         page_size_value = len(dataset_page)
-        print("Page_size_value", page_size_value)
+
         # Determine current page
         current_page = page
 
