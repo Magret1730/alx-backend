@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Task 0 module -> A basic dictionary"""
+"""Task 0 """
 
 from base_caching import BaseCaching
 
