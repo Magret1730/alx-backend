@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Task 3 """
+""" Task 3: Least Recently Used """
 BaseCaching = __import__('base_caching').BaseCaching
 
 
