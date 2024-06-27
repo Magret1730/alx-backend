@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" TAsk 2 """
+""" Task 2: Last In First Out Cache """
 BaseCaching = __import__('base_caching').BaseCaching
 
 
