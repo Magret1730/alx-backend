@@ -29,7 +29,7 @@ def get_locale():
     """
     # Check if the locale parameter is present in the request args
     locale = request.args.get('locale')
-    if locale and locale not in app.config['LANGUAGES']:
+    if locale and local in app.config['LANGUAGES']:
         return locale
     # Fallback to the best match from the request accept languages
     return request.accept_languages.best_match(app.config['LANGUAGES'])
