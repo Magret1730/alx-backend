@@ -28,6 +28,7 @@ users = {
     4: {"name": "Teletubby", "locale": None, "timezone": "Europe/London"},
 }
 
+
 def get_user():
     """
     Returns a user dictionary or None if the ID cannot be found or if login_as
@@ -39,10 +40,12 @@ def get_user():
     except (TypeError, ValueError):
         return None
 
+
 @app.before_request
 def before_request():
     """ Set g.user before each request"""
     g.user = get_user()
+
 
 @babel.localeselector
 def get_locale():
@@ -59,6 +62,7 @@ def get_locale():
         return locale
     # Fallback to the best match from the request accept languages
     return request.accept_languages.best_match(app.config['LANGUAGES'])
+
 
 @app.route('/')
 def home():
