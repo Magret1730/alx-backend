@@ -4,6 +4,7 @@ from flask import Flask, render_template
 from flask_babel import Babel
 
 # Initialize app from flask
+# Versions used flask==2.0.3 werkzeug==2.0.3 flask_babel==3.0.0
 app = Flask(__name__)
 
 
