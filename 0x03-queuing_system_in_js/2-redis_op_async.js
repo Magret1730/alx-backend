@@ -29,7 +29,15 @@ async function displaySchoolValue (schoolName) {
 	}
 };
 
-// redisConnect().catch(err => console.error('Failed to connect:', err));
-displaySchoolValue('Holberton');
-setNewSchool('HolbertonSanFrancisco', '100');
-displaySchoolValue('HolbertonSanFrancisco');
+async function main() {
+	await displaySchoolValue('Holberton');
+	await setNewSchool('HolbertonSanFrancisco', '100');
+	await displaySchoolValue('HolbertonSanFrancisco');
+}
+
+main();
+
+
+// displaySchoolValue('Holberton');
+// setNewSchool('HolbertonSanFrancisco', '100');
+// displaySchoolValue('HolbertonSanFrancisco');
